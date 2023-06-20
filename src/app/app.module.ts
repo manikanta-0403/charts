@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MapboxComponent } from './mapbox/mapbox.component';
+import { ChartAComponent } from './chart-a/chart-a.component';
+import { ChartBComponent } from './chart-b/chart-b.component';
+import { FormsModule } from '@angular/forms';
+import { ChartCComponent } from './chart-c/chart-c.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapboxComponent,
+    ChartAComponent,
+    ChartBComponent,
+    ChartCComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
