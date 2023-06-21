@@ -8,6 +8,7 @@ import { ChartAComponent } from './chart-a/chart-a.component';
 import { ChartBComponent } from './chart-b/chart-b.component';
 import { FormsModule } from '@angular/forms';
 import { ChartCComponent } from './chart-c/chart-c.component';
+import { ChartDComponent } from './chart-d/chart-d.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChartCComponent } from './chart-c/chart-c.component';
     MapboxComponent,
     ChartAComponent,
     ChartBComponent,
-    ChartCComponent
+    ChartCComponent,
+    ChartDComponent
   ],
   imports: [
     BrowserModule,

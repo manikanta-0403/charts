@@ -1,28 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as Highcharts from 'highcharts';
+import * as Highcharts from "highcharts";
+import HC_map from "highcharts/modules/map";
+HC_map(Highcharts);
 
-declare var require: any;
-const More = require('highcharts/highcharts-more');
-More(Highcharts);
-
-import Histogram from 'highcharts/modules/histogram-bellcurve';
-Histogram(Highcharts);
-
-import highcharts3D from 'highcharts/highcharts-3d';
-highcharts3D(Highcharts);
-
-import Cylinder from 'highcharts/modules/cylinder';
-Cylinder(Highcharts);
-
-const Exporting = require('highcharts/modules/exporting');
-Exporting(Highcharts);
-
-const ExportData = require('highcharts/modules/export-data');
-ExportData(Highcharts);
-
-const Accessibility = require('highcharts/modules/accessibility');
-Accessibility(Highcharts);
 
 @Component({
   selector: 'app-chart-c',
@@ -35,16 +16,19 @@ export class ChartCComponent implements OnInit {
   constructor() {
     this.chart = {
       title: {
-        text: 'Company slaes and profits',
+        text: 'Company Sales and profits',
         align: 'left',
       },
       yAxis: {
         title: {
-          text: 'Year',
+          text: 'Sales',
         },
       },
 
       xAxis: {
+        title: {
+          text: 'Year',
+        },
         accessibility: {
           rangeDescription: 'Range: 2010 to 2020',
         },
